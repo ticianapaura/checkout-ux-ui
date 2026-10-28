@@ -1,21 +1,21 @@
 # Checkout UX/UI · White Label
 
-Flujo de checkout white-label de 3 pasos, diseñado y prototipado por **Ticiana Paura**.
+A white-label, 3-step checkout flow, designed and prototyped in code by **Ticiana Paura**.
 
-🔗 **Demo en vivo:** https://ticianapaura.github.io/checkout-ux-ui/
+🔗 **Live demo:** https://ticianapaura.github.io/checkout-ux-ui/
 
-## El flujo
+## The flow
 
-1. **Método** – grilla de métodos de pago (tarjeta, transferencias, billeteras).
-2. **Monto** – selección entre tarjetas guardadas con carrusel y validación de CVV.
-3. **Confirmación** – resumen del pago con su ID de transacción.
+1. **Method** – a grid of payment methods (card, bank transfers, wallets).
+2. **Amount** – pick from saved cards in a carousel, with CVV validation.
+3. **Confirmation** – payment summary with its transaction ID.
 
-## Decisiones de diseño
+## Design decisions
 
-- **White label:** la marca (nombre, logo, email de soporte) vive en un solo archivo de configuración, así un comercio nuevo solo cambia eso.
-- **Design tokens:** colores, tipografía y espaciados definidos como variables CSS.
-- **Accesibilidad:** el foco se mueve al título de cada pantalla al avanzar, para usuarios de teclado y lectores de pantalla.
-- **Componentes:** stepper, tiles de método, tarjeta guardada, campo CVV, tooltip, toast y control segmentado.
+- **White label:** the brand (name, logo, support email) lives in a single config file, so a new merchant only changes that.
+- **Design tokens:** colors, type and spacing defined as CSS variables.
+- **Accessibility:** focus moves to each screen's title when advancing, for keyboard and screen reader users.
+- **Components:** stepper, method tiles, saved card, CVV field, tooltip, toast and segmented control.
 
 ## Stack
 
