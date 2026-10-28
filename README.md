@@ -1,32 +1,22 @@
-# React + TypeScript + Vite
+# Checkout UX/UI · White Label
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Flujo de checkout white-label de 3 pasos, diseñado y prototipado por **Ticiana Paura**.
 
-Currently, two official plugins are available:
+🔗 **Demo en vivo:** https://ticianapaura.github.io/checkout-ux-ui/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## El flujo
 
-## React Compiler
+1. **Método** – grilla de métodos de pago (tarjeta, transferencias, billeteras).
+2. **Monto** – selección entre tarjetas guardadas con carrusel y validación de CVV.
+3. **Confirmación** – resumen del pago con su ID de transacción.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Decisiones de diseño
 
-## Expanding the Oxlint configuration
+- **White label:** la marca (nombre, logo, email de soporte) vive en un solo archivo de configuración, así un comercio nuevo solo cambia eso.
+- **Design tokens:** colores, tipografía y espaciados definidos como variables CSS.
+- **Accesibilidad:** el foco se mueve al título de cada pantalla al avanzar, para usuarios de teclado y lectores de pantalla.
+- **Componentes:** stepper, tiles de método, tarjeta guardada, campo CVV, tooltip, toast y control segmentado.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+React · TypeScript · Vite · CSS Modules
